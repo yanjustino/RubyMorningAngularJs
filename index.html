@@ -1,10 +1,15 @@
-<html ng-app='angularApp'>
+<html ng-app="angularApp">
 <head>
   <title>Angular</title>
-  <link rel="stylesheet" href="/bower_component/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/bower_component/bootstrap/dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
 </head>
-<body>
-  <script src="/bower_component/angular/angular.min.js" type="text/javascript"></script>
+<body ng-controller="HomeController as home">
+  <h1>{{home.message}}</h1>
+
+
+  <script src="bower_components/angular/angular.min.js" type="text/javascript"></script>
+  <script src="app.js" type="text/javascript"></script>
+  <script src="home_controller.js" type="text/javascript"></script>
 </body>
 </html>
